@@ -1,0 +1,29 @@
+.footer {
+  padding: 4.375rem 0;
+}
+
+.footer__icon-social {
+  font-size: 1.75rem;
+  color: #ffffff;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  height: 3.125rem;
+  width: 3.125rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.github:hover {
+  background-color: #000;
+}
+
+.facebook:hover {
+  background-color: #3b5998;
+}
+
+.linkedin:hover {
+  background-color: #0077b5;
+}

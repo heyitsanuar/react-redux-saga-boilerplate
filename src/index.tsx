@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { Provider as ReduxProvider } from 'react-redux';
+import { store } from '@rdx/store.config';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+import { AppContainer } from '@app/app.container';
+import './index.styles.css';
+require('dotenv').config();
+
+ReactDOM.render(
+  <ReduxProvider store={store}>
+    <AppContainer />
+  </ReduxProvider>,
+  document.getElementById('root'),
+);

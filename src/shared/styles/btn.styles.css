@@ -1,0 +1,45 @@
+.btn {
+  color: #444444;
+}
+
+.btn__link {
+  font-weight: 600;
+  text-align: center;
+  background: #ffffff;
+  min-width: 5.625rem;
+  padding: 0.625rem 0;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn__link:hover {
+  background: #3d2b3b;
+  color: #ffffff;
+}
+
+.btn__mobile-icon {
+  font-size: 1.25rem;
+}
+
+.btn--link--mobile {
+  margin-right: 0;
+}
+
+.btn--icons {
+  min-width: 2.5rem;
+}
+
+.btn--icons:hover {
+  background: #df3940;
+}
+
+.btn--no-link {
+  cursor: default;
+}
+
+@media (min-width: 768px) {
+  .btn__mobile-icon {
+    display: none;
+  }
+}

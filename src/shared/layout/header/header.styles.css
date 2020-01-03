@@ -1,0 +1,145 @@
+.header {
+  width: 100%;
+  height: 100vh;
+  min-height: 27.5rem;
+}
+
+.header__menu {
+  position: fixed;
+  left: -100%;
+  height: 100vh;
+  width: 80%;
+  padding: 4.375rem 0;
+  z-index: 3000;
+  transition: all 0.5s ease;
+}
+
+.header__menu-link {
+  display: block;
+  padding: 0.625rem 0;
+  margin: 0 4.375rem;
+  color: #ffffff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.header__menu-link--logo {
+  display: none;
+}
+
+.header__menu--is-toggled {
+  display: block;
+  background: #3d2b3b;
+  left: 0;
+}
+
+.header__mobile {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.875rem 0;
+  z-index: 300;
+}
+
+.header__background {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.header__banner {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  z-index: 100;
+}
+
+.header__title {
+  font-size: 3.75rem;
+  color: #f78b8b;
+  margin-top: 0;
+}
+
+.header__subtitle {
+  font-size: 2.25rem;
+}
+
+.header--dark {
+  background: #3d2b3b;
+  padding: 1.25rem 0 0 0;
+}
+
+.is-current-link {
+  background: #df3940;
+  padding: 10px 25px;
+  margin: 0;
+}
+
+@media (min-width: 576px) {
+  .header {
+    min-height: 35.625rem;
+  }
+
+  .header__banner {
+    transform: translateY(0%);
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    min-height: 40.625rem;
+  }
+
+  .header__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3.125rem 0;
+    width: 100%;
+    left: 0;
+    height: auto;
+  }
+
+  .header__menu-link {
+    display: inline;
+    margin: 0 1.5625rem;
+    padding: 0;
+  }
+
+  .header__menu-link--logo {
+    display: block;
+  }
+
+  .header__menu--is-toggled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #df3940;
+  }
+
+  .header__mobile {
+    display: none;
+  }
+
+  .header__background {
+    position: static;
+    float: right;
+    width: auto;
+    height: 100%;
+  }
+
+  .header__banner {
+    transform: translateY(-50%);
+  }
+}
+
+@media (min-width: 992px) {
+  .header {
+    min-height: 41.875rem;
+  }
+}
