@@ -1,20 +1,11 @@
 import { combineReducers } from 'redux';
 
-import { ThemeStateInterface, themeReducer } from '@themes/theme.reducer';
-import { UserStateInterface, userReducer } from './../../app/user.reducer';
-import { ProjectStateInterface, projectReducer } from './../../app/projects/projects.reducer';
-import { SkillsStateInterface, skillReducer } from '@app/skills/skills.reducer';
+import { IThemeState, themeReducer } from '@themes/theme.reducer';
 
-export interface AppStateInterface {
-  theme: ThemeStateInterface;
-  user: UserStateInterface;
-  projects: ProjectStateInterface;
-  skills: SkillsStateInterface;
+export interface IAppState {
+  theme: IThemeState;
 }
 
-export const RootReducer = combineReducers<AppStateInterface>({
+export const RootReducer = combineReducers<IAppState>({
   theme: themeReducer,
-  user: userReducer,
-  projects: projectReducer,
-  skills: skillReducer,
 });
