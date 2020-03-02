@@ -14,7 +14,7 @@ function replaceEndpointPlaceholders(endpoint: string, params: any) {
   return renewedEndpoint;
 }
 
-function typeGenerator(type: string) {
+export function typeGenerator(type: string) {
   return {
     TRIGGER: `${type}/TRIGGER`,
     FULFILL: `${type}/FULFILL`,
@@ -24,7 +24,7 @@ function typeGenerator(type: string) {
   };
 }
 
-function createActionRoutine(type: string, endpoint = '') {
+export function createActionRoutine(type: string, endpoint = '') {
   const types = typeGenerator(type);
 
   return {
@@ -38,7 +38,7 @@ function createActionRoutine(type: string, endpoint = '') {
   };
 }
 
-function createCrudReducer(params?: any): RoutineReducer {
+export function createCrudReducer(params?: any): RoutineReducer {
   return {
     items: {},
     isLoading: false,
@@ -47,7 +47,7 @@ function createCrudReducer(params?: any): RoutineReducer {
   };
 }
 
-function createReducerRoutine(params: any) {
+export function createReducerRoutine(params: any) {
   var modelBuffer = {};
 
   params.forEach((item: any) => {
