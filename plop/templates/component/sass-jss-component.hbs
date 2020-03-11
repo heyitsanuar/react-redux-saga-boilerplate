@@ -1,0 +1,26 @@
+import React from 'react';
+
+// Types
+import { Classes } from 'jss';
+
+// Assets
+import injectSheet from 'react-jss';
+import './{{dashCase name}}.styles.scss';
+
+export interface I{{pascalCase name}}Props {
+    classes: Classes;
+}
+
+const {{pascalCase name}} = (props: I{{pascalCase name}}Props) => {
+    const { classes }= props;
+
+    return (
+        <div>{{pascalCase name}} component with jss</div>
+    );
+};
+
+const styles = (theme: any) => ({
+
+});
+
+export const {{pascalCase name}}Component = injectSheet(styles)({{pascalCase name}});
