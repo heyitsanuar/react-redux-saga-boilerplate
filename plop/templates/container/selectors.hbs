@@ -1,0 +1,12 @@
+import { createSelector } from 'reselect';
+
+import { IAppState } from '@rdx/root.reducer';
+
+import { getList } from '@shared/helpers/state-caster';
+
+export const _get{{pascalCase name}} = (state: IAppState) => state;
+
+export const get{{pascalCase name}} = createSelector(
+  [_get{{pascalCase name}}],
+  prop => prop,
+);
