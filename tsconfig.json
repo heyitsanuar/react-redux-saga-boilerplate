@@ -28,5 +28,5 @@
       "@utils/*": ["shared/utils/*"]
     }
   },
-  "include": ["src"]
+  "include": ["src", "plopfile.js"]
 }

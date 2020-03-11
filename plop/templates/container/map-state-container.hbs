@@ -1,0 +1,26 @@
+import React from 'react';
+
+import { IAppState } from '@rdx/root.reducer';
+
+import { connect } from 'react-redux';
+import { get{{pascalCase name}} } from './{{dashCase name}}.selectors';
+
+export interface I{{pascalCase name}}Props {
+ 
+}
+
+const {{pascalCase name}} = (props: I{{pascalCase name}}Props) => {
+  const { } = props;
+
+  return (
+        <div>
+            Full Redux Container
+        </div>
+  );
+};
+
+const mapStateToProps = (state: IAppState) => ({
+
+});
+
+export const {{pascalCase name}}Container = connect(mapStateToProps)({{pascalCase name}});

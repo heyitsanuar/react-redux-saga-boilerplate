@@ -86,7 +86,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "plop": "plop"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -179,6 +180,7 @@
     ]
   },
   "devDependencies": {
-    "babel-plugin-module-resolver": "^4.0.0"
+    "babel-plugin-module-resolver": "^4.0.0",
+    "plop": "^2.6.0"
   }
 }
